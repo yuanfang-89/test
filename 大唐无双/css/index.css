@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a, div, button {
+    border: 0;
+    outline: 0;
+}
+div {
+    display: block;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.container{
+    width: 100%;
+    min-width: 1200px;
+    height: 2896px;
+    min-height: 1297px;
+    position: relative;
+    overflow: hidden;
+    background: #f3fafa url(../img/container_bg.jpg) no-repeat center top;
+    
+}
+nav{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    margin: 0 auto 0;
+    background: url(../img/nav_bg.png) no-repeat center top;
+}
+.top_nav{
+    width: 840px;
+    height: 100%;
+    margin: 0 auto;
+    padding-left: 430px;
+}
+.top_nav .li_item{
+    width: 105px;
+    height: 100%;
+    display: block;
+    float: left;
+}
+.top_nav .li_item_ewm{
+    position: relative;
+}
+.top_nav .li_item i{
+    width: 115px;
+    height: 165px;
+    position: absolute;
+    top: 69px;
+    left: -5px;
+    background: url(../img/QR_code.jpg) no-repeat;
+    display: none;
+    z-index: 10;
+}
+.top_nav .li_item:hover i{
+    display: block;
+}
+.top_nav .li_item .li_link{
+    width: 100%;
+    display: block;
+    position: relative;
+    color: #c6c6c6;
+    text-align: center;
+    line-height: 69px;
+    font-size: 16px;
+}
+.top_nav .li_item .li_link:hover{
+    opacity: .9;
+    -moz-opacity: .9;/* 兼容Moz+firefox */
+    filter: alpha(opacity=90);/* 兼容IE浏览器 */
+    background-color: #000;
+    color: #fff
+}
+.top_nav .li_item .li_link:focus{
+    outline: none;
+}
+.top_nav .li_item .info{
+    width: 100%;
+    display: none;
+    position: relative;
+    top:0;
+    padding: 10px 0;
+    background: url(../img/navinfoli_bg.png);
+    z-index: 10;
+    /* transition: height .2s linear; */
+}
+.top_nav .li_item .info li{
+    width: 100%;
+}
+.top_nav .li_item:hover .info{
+    display: block;
+}
+.top_nav .li_item .info li a{
+    display: block;
+    width: 100%;
+    line-height: 44px;
+    text-align: center;
+    color: #c6c6c6;
+}
+.top_nav .li_item .info li a:hover{
+    color: #e02727;
+}
+
+.top_nav .li_item .li_link em{
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #e02727;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.top_nav .li_item .li_link:hover em{
+    width: 100%;
+}
+nav .top_logo{
+    width: 150px;
+    height: 64px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -640px;
+    background: url(../img/logo.png) no-repeat 0 0;
+    /* 其中0 0代表background-position的值，表示背景图的定位，
+    前后两个分别是横向定位和纵向定位。
+    左上角是 0 0。单位是像素 (0px 0px) 或任何其他的 CSS 单位。 */
+}

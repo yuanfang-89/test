@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a, div, button {
+    border: 0;
+    outline: 0;
+}
+div {
+    display: block;
+}
+img {
+    border: none;
+    vertical-align: middle
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+/* a:visited {
+    color: #8C1502;
+    text-decoration: none;
+} */
+/* .serverArea li a,
+.serverArea li a:hover,
+.serverArea li a.on,
+.serverName li a,
+.serverName li a:hover,
+.serverName li a.on,
+.guide li a,
+.guide li a,
+.guide li a:hover{
+    background: url(../images/btns.png) no-repeat;
+    background-position: 0 0;
+} */
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+body {
+    font: 12px/1.2em tahoma, arial, 宋体;
+    background: #272323 url(../img/bodybg.jpg) repeat fixed;
+    color: #5F4802;
+}
+
+
+/* 头部 */
+.header{
+    width: 970px;
+    height: 132px;
+    margin: 0 auto;
+    position: relative;
+}
+.header,
+.cookbook{
+    background: url(../img/treasure_bg.jpg);
+}
+.logo {
+    float: left;
+}
+.logo a {
+    height: 110px;
+    width: 220px;
+    margin: 15px 0 0 9px;
+    display: block;
+    overflow: hidden;
+    text-indent: -1000em;
+}
+.mobile {
+    position: absolute;
+    width: 91px;
+    height: 22px;
+    overflow: hidden;
+    line-height: 50em;
+    background: url(../img/mobile-dt.png) no-repeat;
+    left: 433px;
+    top: 95px;
+}
+.mobile:hover {
+    background-position: 0 -22px;
+}
+.wechat_publie_link {
+    position: absolute;
+    left: 529px;
+    top: 95px;
+    width: 88px;
+    margin-left: 0;
+    padding-left: 28px;
+    line-height: 22px;
+    background: url(../img/icon_wechat.png) no-repeat;
+    background-color: #671d0d;
+    background-position: 5px center;
+    color: #f6a112;
+    cursor: default;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0
+}
+.wechat_publie_link:hover {
+    color: #f6a112;
+    background-color: #953800;
+    background-position: 5px center;
+}
+.wechat_publie_link .wechat_qr_code {
+    width: 206px;
+    height: 245px;
+    display: none;
+    position: absolute;
+    top: 29px;
+    right: -45px;
+    z-index: 100;
+    color: #000;
+    text-align: center;
+    background: url(../img/header_qrcode_bg.png);
+}
+.wechat_publie_link:hover .wechat_qr_code{
+    display: block;
+}
+.wechat_qr_code img {
+    display: block;
+    width: 182px;
+    height: 182px;
+    margin: 18px auto 12px;
+}
+
+/* 中间部分 */
+.serverChose {
+    background: url(../img/areabg.jpg) no-repeat;
+    width: 970px;
+    margin: 0 auto;
+    height: 400px;
+}
+.serverChose h2 {
+    display: none;
+}
+.serverArea {
+    width: 228px;
+    float: left;
+}
+.serverArea ul {
+    margin: 72px 0 0 24px;
+}
+/* 未访问和已访问 */
+.aYellow a:link, .aYellow a:visited {
+    color: #C4B06D;
+}
+.aYellow a{
+    color: #C4B06D;
+    cursor: pointer;
+}
+/* 鼠标悬浮或点击 */
+.aYellow a:hover,
+.aYellow a:active {
+    color: #FF0;
+}
+/* .aYellow a.on{
+    color: #FF0;
+} */
+.serverArea li {
+    float: left;
+    display: inline;
+    margin: 0 6px 9px 0;
+}
+.serverArea li a {
+    width: 96px;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    display: block;
+    background: url(../img/btns.png) no-repeat;
+    background-position: 0 -36px;
+}
+.serverArea li a:hover,
+.serverArea li a.on {
+    color: #FDF278;
+    text-decoration: none;
+    font-weight: bold;
+    background-position: 0 -65px;
+}
+
+
+/** 
+* 服务器名称部分
+*/
+.serverName {
+    float: left;
+    width: 556px;
+}
+
+.serverName ul {
+    margin: 72px 0 0 28px;
+}
+
+.serverName li {
+    float: left;
+    display: inline;
+    margin: 0 6px 9px 0;
+}
+
+.serverName li a {
+    width: 122px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    display: block;
+    background: url(../img/btns.png) no-repeat;
+    background-position: 0 -94px;
+    font-weight: bold;
+}
+
+.serverName li a span {
+    font-weight: normal;
+}
+
+.serverName li a:hover,
+.serverName li a.on {
+    background: url(../img/btns.png) no-repeat;
+    background-position: 0 -129px;
+    color: #FDF278;
+    text-decoration: none;
+}
+
+
+/**
+*   交易指引部分
+*/
+.guide {
+    width: 182px;
+    float: left;
+    height: 360px;
+    overflow: hidden;
+}
+.guide ul {
+    margin: 132px 0 0 20px;
+}
+.guide li {
+    float: left;
+    display: inline;
+    margin: 0 3px 0 0;
+}
+.guide li a {
+    width: 72px;
+    height: 48px;
+    line-height: 37px;
+    text-align: center;
+    display: block;
+    background: url(../img/btns.png) no-repeat;
+    background-position: 0 -164px;
+    font-weight: bold;
+    color: #783C0B;
+}
+.guide li a:link,
+.guide li a:visited {
+    color: #471400;
+}
+.guide li a:hover {
+    background: url(../img/btns.png) no-repeat;
+    background-position: 0 -212px;
+    text-decoration: none;
+}
+
+
+
+/**
+*   什么是藏宝阁部分
+*/
+.cookbook {
+    width: 970px;
+    height: 200px;
+    margin: 0 auto;
+    background-position: 0 -132px;
+}
+.cookbook h2 {
+    display: none;
+}
+.cookbook .desc {
+    width: 500px;
+    float: left;
+    padding: 96px 32px 0 54px;
+    line-height: 20px;
+}
+.cookbook .desc p {
+    float: left;
+    width: 230px;
+}
+.cookbook .desc p.s2 {
+    margin: -36px 0 0 24px;
+    width: 242px;
+}
+.cookbook .manualList {
+    float: right;
+    width: 270px;
+    margin: 108px 64px 0 0;
+    display: inline;
+}
+.cookbook .manualList li {
+    float: left;
+    width: 72px;
+    background: url(../img/btns.png) no-repeat;
+    background-position: -149px -170px;
+    padding: 0 0 9px 12px;
+}
+.cookbook .manualList li a:hover {
+    color: #8C1502;
+    text-decoration: underline;
+}
+
+
+/**
+*   底部
+*/
+.footer {
+    padding: 32px 0 12px;
+    line-height: 24px;
+}
+.footer a:link,
+.footer a:visited {
+    color: #7B7362;
+}
+.footer a:hover,
+.footer a:active {
+    color: #EED37A;
+}
+.cbg-copyright {
+    width: 840px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 15px 0 10px;
+    font-size: 12px;
+    line-height: 20px;
+}
+.cbg-copyright .nie-cn-logo {
+    display: inline-block;
+    vertical-align: middle;
+    height: 48px;
+    min-width: 300px;
+}
+.cbg-copyright .nie-cn-logo a {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2px;
+}
+.footer a:link, .footer a:visited {
+    color: #7B7362;
+}
+.footer a:hover, .footer a:active {
+    color: #EED37A;
+    text-decoration: underline;
+}
+.cbg-copyright .nie-cn-nav {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    z-index: 1;
+}
+.cbg-copyright .nie-cn-nav i {
+    font-style: normal;
+}
+.cbg-copyright .nie-cn-nav i.nie-cn-nav-i2 {
+    height: 28px;
+    line-height: 28px;
+    text-align: left;
+}

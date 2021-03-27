@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a, div, button {
+    border: 0;
+    outline: 0;
+}
+div {
+    display: block;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+input{
+    border: none;
+    outline: none;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+h1{
+    display: none;
+}
+.wrap1 {
+    max-width: 1920px;
+    min-width: 1200px;
+    margin: auto;
+    width: 100%;
+    height: 1445px;
+    background: url(../img/register_bg.jpg) center no-repeat;
+    background-position: top;
+    position: relative;
+}
+.wrap2 {
+    width: 1200px;
+    margin: auto;
+    height: 1285px;
+    position: relative;
+}
+.logo{
+    width: 200px;
+    height: 121px;
+    position: absolute;
+    top: 43px;
+    left: 50%;
+    margin-left: -102px;
+    display: block;
+    background: url(../img/register_logo.jpg) no-repeat;
+}
+.ui-ctn{
+    position: absolute;
+    width: 999px;
+    height: 1035px;
+    top: 200px;
+    left: 50%;
+    margin-left: -500px;
+}
+.ui-ctn .tit{
+    height: 90px;
+    margin: 0;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    line-height: 90px;
+    background: url(../img/register_p_bg.png);
+}
+.ui-ctn .col-reg{
+    height: 294px;
+    padding: 10px 0 70px;
+    background: url(../img/register_div_bg.png);
+}
+.ui-ctn .col-reg .NIE-fur{
+    width: 380px;
+    height: 281px;
+    margin: 50px auto;
+}
+.ui-ctn .col-reg .NIE-fur .inputbox1,
+.ui-ctn .col-reg .NIE-fur .inputbox2{
+    width: 380px;
+    height: 47px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    padding: 0 32px 0 8px;
+    font-size: 18px;
+    
+    font-weight: bold;
+}
+input::-webkit-input-placeholder{
+    font-size: 15px;
+    font-weight: normal;
+}
+.ui-ctn .col-reg .NIE-fur label,
+.ui-ctn .col-reg .NIE-fur label a{
+    font-size: 13px;
+    color: #999999;
+}
+.ui-ctn .col-reg .NIE-fur .u-zc-agree{
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    display: block;
+    margin-top: 4px;
+    float: left;
+    margin-right: 5px;
+    border: solid 1px #aaa;
+    color: rgb(91, 202, 141);
+    font-size: 12px;
+ }
+.ui-ctn .col-reg .NIE-fur .zc-un-login{
+    width: 14px;
+    height: 14px;
+    margin: 0;
+    /* opacity: 0; */
+    cursor: pointer;
+    background: #aaa;
+    display: none;
+    
+}
+.zc-un-login[type=checkbox]:checked+.u-zc-agree:after {
+    content: '\2714';
+    font-size: 12px;
+}
+.ui-ctn .col-reg .NIE-fur .loginbox{
+    width: 100%;
+    height: 50px;
+    margin: 14px 0 12px 0;
+}
+.ui-ctn .col-reg .NIE-fur .loginbox .u-loginbtn{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background: #d0b172;
+}
+.ui-ctn .col-reg .NIE-fur .loginbox .u-loginbtn:hover {
+    background: #b59357;
+}
+.ui-ctn .col-reg .NIE-fur .loginbox .u-loginbtn:active {
+    color: #edc8c8;
+}
+.ui-ctn .sec {
+    margin-top: 4px;
+}
+.ui-ctn .tit .b {
+    font-weight: 600;
+}
+.ui-ctn .col-gift {
+    height: 510px;
+    background: url(../img/register_div_bg.png);
+    position: relative;
+}
+.gift {
+    width: 286px;
+    height: 319px;
+}
+.ui-ctn .col-gift .qiandao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/qiandao.png) no-repeat;
+}
+.ui-ctn .col-gift .fanli {
+    position: absolute;
+    top: 0;
+    left: 330px;
+    background: url(../img/fanli.png) no-repeat;
+}
+.ui-ctn .col-gift .jianghu {
+    position: absolute;
+    top: 0;
+    left: 700px;
+    background: url(../img/jianghu.png) no-repeat;
+}
+.ui-ctn .col-gift .jiangli {
+    position: absolute;
+    top: 230px;
+    left: 180px;
+    background: url(../img/jiangli.png) no-repeat;
+}
+.ui-ctn .col-gift .haoyou {
+    position: absolute;
+    top: 230px;
+    left: 500px;
+    background: url(../img/haoyou.png) no-repeat;
+}
+
+/* 底部 */
+#footer {
+    height: 111px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#NIE-copyRight {
+    background: transparent;;
+    color: #ccc;
+    text-align: center;
+}
+.nie-copyright-new-inner {
+    width: 1024px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 15px 0 10px;
+    font-size: 12px;
+    line-height: 20px;
+}
+.nie-copyright-new-inner .nie-cn-logo {
+    display: inline-block;
+    vertical-align: middle;
+    height: 48px;
+    min-width: 300px;
+}
+#NIE-copyRight .nie-cn-part1 .nie-cn-logo a{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2px;
+}
+.nie-copyright-new-inner .nie-cn-logo img {
+    padding-right: 15px;
+    padding-top: 5px;
+    border: 0;
+    vertical-align: middle;
+}
+.nie-copyright-new-inner .nie-cn-nav {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    z-index: 1;
+}
+.nie-copyright-new-inner .nie-cn-nav i {
+    font-style: normal;
+}
+.nie-copyright-new-inner .nie-cn-nav i a{
+    color: #e23a3f;
+}
+.nie-copyright-new-inner .nie-cn-nav i.nie-cn-nav-i2 {
+    height: 28px;
+    line-height: 28px;
+    text-align: left;
+    color: #939393;
+} 
+.nie-copyright-new-inner .nie-cn-nav a.nie-cn-guardianship {
+    display: inline-block;
+    color: #e23a3f;
+    background-color: #610000;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 3px;
+    top: 21px;
+}
+.nie-copyright-new-inner .nie-cn-nav a.nie-cn-guardianship:hover,
+.nie-copyright-new-inner .nie-cn-nav a.nie-cn-guardianship:active{
+    text-decoration: underline;
+}
